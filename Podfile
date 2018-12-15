@@ -1,12 +1,17 @@
-platform :ios, '8.0'
-
 use_frameworks!
 
 target 'GEOSwift' do
+  platform :ios, '8.0'
+  pod 'geos', '3.7.1'
+end
+
+target 'GEOSwift-macOS' do
+  platform :osx, '10.14'
   pod 'geos', '3.7.1'
 end
 
 target 'GEOSwiftTests' do
+  platform :ios, '8.0'
   pod 'geos', '3.7.1'
 end
 
