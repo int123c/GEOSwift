@@ -1,6 +1,6 @@
 use_frameworks!
 
-target 'GEOSwift' do
+target 'GEOSwift-iOS' do
   platform :ios, '8.0'
   pod 'geos', '3.7.1'
 end

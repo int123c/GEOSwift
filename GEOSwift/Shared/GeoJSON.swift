@@ -237,7 +237,7 @@ private func ParseGEOJSONGeometry(_ type: String, coordinatesNSArray: NSArray) -
 
     case "MultiPolygon":
         // For type "MultiPolygon", the "coordinates" member must be an array of Polygon coordinate arrays.
-        var polygons = [Polygon]()
+        var polygons = [Polygono]()
         for representation in coordinatesNSArray {
             guard let polyRepresentation = representation as? NSArray,
                   let geom = GEOJSONCreatePolygonFromRepresentation(polyRepresentation) else {
@@ -315,7 +315,7 @@ private func GEOJSONCreateLinearRingFromRepresentation(_ representation: [[Doubl
     return LinearRing(storage: GeometryStorage(GEOSGeom: GEOSGeom, parent: nil))
 }
 
-private func GEOJSONCreatePolygonFromRepresentation(_ representation: NSArray) -> Polygon? {
+private func GEOJSONCreatePolygonFromRepresentation(_ representation: NSArray) -> Polygono? {
 
     // For type "Polygon", the "coordinates" member must be an array of LinearRing coordinate arrays.
     // For Polygons with multiple rings, the first must be the exterior ring and any others must be
@@ -326,7 +326,7 @@ private func GEOJSONCreatePolygonFromRepresentation(_ representation: NSArray) -
         guard let shell = GEOJSONCreateLinearRingFromRepresentation(coordinates) else {
             return nil
         }
-        let polygon = Polygon(shell: shell, holes: nil)
+        let polygon = Polygono(shell: shell, holes: nil)
         return polygon
     }
 
@@ -345,5 +345,5 @@ private func GEOJSONCreatePolygonFromRepresentation(_ representation: NSArray) -
         return nil
     }
     let shell = rings.remove(at: 0)
-    return Polygon(shell: shell, holes: rings)
+    return Polygono(shell: shell, holes: rings)
 }

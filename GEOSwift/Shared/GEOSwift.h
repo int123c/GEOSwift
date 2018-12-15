@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 andreacremaschi. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
 @import geos;
 
 //! Project version number for GEOSwift.

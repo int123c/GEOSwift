@@ -23,9 +23,9 @@ extension Geometry {
             var coordinates = (self as! LineString).points.map(CLLocationCoordinate2D.init)
             return MKPolyline(coordinates: &coordinates,
                               count: coordinates.count)
-        case is Polygon:
-            var exteriorRingCoordinates = (self as! Polygon).exteriorRing.points.map(CLLocationCoordinate2D.init)
-            let interiorRings = (self as! Polygon).interiorRings.map {
+        case is Polygono:
+            var exteriorRingCoordinates = (self as! Polygono).exteriorRing.points.map(CLLocationCoordinate2D.init)
+            let interiorRings = (self as! Polygono).interiorRings.map {
                 MKPolygonWithCoordinatesSequence($0.points)
             }
             return MKPolygon(coordinates: &exteriorRingCoordinates,
@@ -33,7 +33,7 @@ extension Geometry {
                              interiorPolygons: interiorRings)
         case let gc as GeometryCollection<Geometry>:
             return MKShapesCollection(geometryCollection: gc)
-        case let gc as GeometryCollection<Polygon>:
+        case let gc as GeometryCollection<Polygono>:
             return MKShapesCollection(geometryCollection: gc)
         case let gc as GeometryCollection<Waypoint>:
             return MKShapesCollection(geometryCollection: gc)

@@ -19,12 +19,11 @@ Pod::Spec.new do |s|
   }
   s.platforms = { :ios => "8.0", :osx => "10.14" }
 
-  s.ios.deployment_target = '8.0'
-  s.mac.deployment_target = '10.14'
   s.source = {
     git: 'https://github.com/GEOSwift/GEOSwift.git',
     tag: s.version
   }
-  s.source_files = 'GEOSwift/*.{swift,h}'
+  s.ios.source_files = 'GEOSwift/Shared/*.{swift,h}', 'GEOSwift/iOS/*.{swift,h}'
+  s.osx.source_files = 'GEOSwift/Shared/*.{swift,h}'
   s.dependency 'geos', '3.7.1'
 end
