@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.authors = {
     'Andrea Cremaschi' => 'andreacremaschi@libero.it'
   }
-  s.platforms = { :ios => "8.0", :osx => "10.14 }
+  s.platforms = { :ios => "8.0", :osx => "10.14" }
 
   s.ios.deployment_target = '8.0'
   s.mac.deployment_target = '10.14'
