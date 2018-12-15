@@ -56,7 +56,8 @@ The assertions for polygons (the rules that define valid polygons) are:
 6. The Exterior of a Polygon with 1 or more holes is not connected. Each hole defines a connected component of the
    Exterior.
 */
-open class Polygono: Geometry {
+@objc(GPolygon) // to avoid conflict on macOS, where Polygon is already defined in QD.framework.
+open class Polygon: Geometry {
 
     open override class func geometryTypeId() -> Int32 {
         return 3 // GEOS_POLYGON
@@ -108,7 +109,7 @@ open class Polygono: Geometry {
  An `Envelope` is a bounding box.
  
 **/
-open class Envelope: Polygono {
+open class Envelope: Polygon {
     public convenience init?(p1: Coordinate, p2: Coordinate) {
         let (maxX, maxY, minX, minY) = (max(p1.x, p2.x), max(p1.y, p2.y), min(p1.x, p2.x), min(p1.y, p2.y))
         guard let shell = LinearRing(points: [
@@ -296,7 +297,7 @@ open class MultiPoint<T: Waypoint> : GeometryCollection<T> {
 /**
 A `MultiPolygon` is a `GeometryCollection` of `Polygon`s.
 */
-open class MultiPolygon<T: Polygono> : GeometryCollection<T> {
+open class MultiPolygon<T: Polygon> : GeometryCollection<T> {
     open override class func geometryTypeId() -> Int32 {
         return 6 // GEOS_MULTIPOLYGON
     }

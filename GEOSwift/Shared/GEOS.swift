@@ -97,7 +97,7 @@ open class Geometry: NSObject {
             subclass = LinearRing.self
 
         case GEOS_POLYGON.rawValue:
-            subclass = Polygono.self
+            subclass = Polygon.self
 
         case GEOS_MULTIPOINT.rawValue:
             subclass = MultiPoint.self
