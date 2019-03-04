@@ -18,7 +18,6 @@
 		13A7C11F21C5462B00CC67FA /* SpatialRelations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20F1DE1B283F580045D8FD /* SpatialRelations.swift */; };
 		13A7C12021C54CAC00CC67FA /* GEOSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = CD25D73D1B27364E008B3FB3 /* GEOSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13A7C12121C54E1500CC67FA /* GEOSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = CD25D73D1B27364E008B3FB3 /* GEOSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13A7C12521C54FDB00CC67FA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13A7C12421C54FDB00CC67FA /* Info.plist */; };
 		335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftTests.framework */; };
 		409D43E236C78C1F43E5AD9B /* Pods_GEOSwift_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18790FBDA5C31A333F9DFB7A /* Pods_GEOSwift_macOS.framework */; };
 		494B87D721051CFF009BE929 /* QuickLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B87D621051CFF009BE929 /* QuickLookTests.swift */; };
@@ -33,10 +32,10 @@
 		818D7A7F1F5F5FDF00E55FB5 /* GeoJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D7A7E1F5F5FDF00E55FB5 /* GeoJSONTests.swift */; };
 		8FAFD2550EBF96EB20A8944F /* Pods_GEOSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA6A05B2BFCC5DBD6A34B52 /* Pods_GEOSwift_iOS.framework */; };
 		BF7C38081F82F03D001509AF /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7C38071F82F03D001509AF /* Feature.swift */; };
-		CD20F1DD1B2830700045D8FD /* GEOSwift-iOS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwift-iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD20F1DD1B2830700045D8FD /* GEOSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD20F1DF1B283F580045D8FD /* SpatialRelations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20F1DE1B283F580045D8FD /* SpatialRelations.swift */; };
 		CD20F1E11B2844210045D8FD /* Geometries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20F1E01B2844210045D8FD /* Geometries.swift */; };
-		CD22998F1B10B506002C19AE /* GEOSwift-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwift-iOS.framework */; };
+		CD22998F1B10B506002C19AE /* GEOSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwift.framework */; };
 		CD2299981B10B506002C19AE /* GEOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2299971B10B506002C19AE /* GEOSTests.swift */; };
 		CD25D72F1B2732FE008B3FB3 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25D7251B2732FE008B3FB3 /* GeoJSON.swift */; };
 		CD25D7301B2732FE008B3FB3 /* GEOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25D7261B2732FE008B3FB3 /* GEOS.swift */; };
@@ -54,7 +53,6 @@
 		CD2DE3A61B39750200E7BCD4 /* point.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFE1B3968B00092C6C6 /* point.geojson */; };
 		CDB7EC051B287CE70055835C /* MapKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7EC041B287CE70055835C /* MapKitTests.swift */; };
 		D36407561F7D0155001BBA46 /* multipolygonwithholes.geojson in Resources */ = {isa = PBXBuildFile; fileRef = D36407551F7D0155001BBA46 /* multipolygonwithholes.geojson */; };
-		DA312B501383705279D8884F /* Pods_GEOSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CD20F1DD1B2830700045D8FD /* GEOSwift-iOS.framework in CopyFiles */,
+				CD20F1DD1B2830700045D8FD /* GEOSwift.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +106,7 @@
 		CD0C44321B20368600E7B24E /* polygon.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = polygon.geojson; sourceTree = "<group>"; };
 		CD20F1DE1B283F580045D8FD /* SpatialRelations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialRelations.swift; sourceTree = "<group>"; };
 		CD20F1E01B2844210045D8FD /* Geometries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometries.swift; sourceTree = "<group>"; };
-		CD2299841B10B506002C19AE /* GEOSwift-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "GEOSwift-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2299841B10B506002C19AE /* GEOSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GEOSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22998E1B10B506002C19AE /* GEOSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GEOSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2299961B10B506002C19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2299971B10B506002C19AE /* GEOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEOSTests.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA312B501383705279D8884F /* Pods_GEOSwift.framework in Frameworks */,
 				8FAFD2550EBF96EB20A8944F /* Pods_GEOSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD22998F1B10B506002C19AE /* GEOSwift-iOS.framework in Frameworks */,
+				CD22998F1B10B506002C19AE /* GEOSwift.framework in Frameworks */,
 				335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +295,7 @@
 		CD6533B21B0E0DFF00DE6D84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD2299841B10B506002C19AE /* GEOSwift-iOS.framework */,
+				CD2299841B10B506002C19AE /* GEOSwift.framework */,
 				CD22998E1B10B506002C19AE /* GEOSwiftTests.xctest */,
 				13A7C10D21C545EA00CC67FA /* GEOSwift.framework */,
 			);
@@ -375,7 +372,7 @@
 			);
 			name = "GEOSwift-iOS";
 			productName = Humboldt;
-			productReference = CD2299841B10B506002C19AE /* GEOSwift-iOS.framework */;
+			productReference = CD2299841B10B506002C19AE /* GEOSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CD22998D1B10B506002C19AE /* GEOSwiftTests */ = {
@@ -458,7 +455,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A7C12521C54FDB00CC67FA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,7 +728,7 @@
 				INFOPLIST_FILE = GEOSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.andreacremaschi.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GEOSwift;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -756,7 +752,7 @@
 				INFOPLIST_FILE = GEOSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.andreacremaschi.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GEOSwift;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD2299831B10B506002C19AE"
-               BuildableName = "GEOSwift-iOS.framework"
+               BuildableName = "GEOSwift.framework"
                BlueprintName = "GEOSwift-iOS"
                ReferencedContainer = "container:GEOSwift.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD2299831B10B506002C19AE"
-            BuildableName = "GEOSwift-iOS.framework"
+            BuildableName = "GEOSwift.framework"
             BlueprintName = "GEOSwift-iOS"
             ReferencedContainer = "container:GEOSwift.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD2299831B10B506002C19AE"
-            BuildableName = "GEOSwift-iOS.framework"
+            BuildableName = "GEOSwift.framework"
             BlueprintName = "GEOSwift-iOS"
             ReferencedContainer = "container:GEOSwift.xcodeproj">
          </BuildableReference>
@@ -98,7 +98,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD2299831B10B506002C19AE"
-            BuildableName = "GEOSwift-iOS.framework"
+            BuildableName = "GEOSwift.framework"
             BlueprintName = "GEOSwift-iOS"
             ReferencedContainer = "container:GEOSwift.xcodeproj">
          </BuildableReference>
